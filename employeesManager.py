@@ -1,5 +1,6 @@
 
-
+from empModel import Employee
+import utilities
 
 
 
@@ -11,8 +12,8 @@ class EmployeesManager:
     def add_employee(self):
         print('\nEnter employee data:')
         name = input('Enter the name: ')
-        age = input_valid_int('Enter the age: ')
-        salary = input_valid_int('Enter the salary: ')
+        age = utilities.input_valid_int('Enter the age: ')
+        salary = utilities.input_valid_int('Enter the salary: ')
 
         self.employees.append(Employee(name, age, salary))
 
